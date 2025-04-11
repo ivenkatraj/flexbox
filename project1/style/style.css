@@ -37,18 +37,22 @@ header>.company-header {
 }
 
 .sign-button,
-.create-button {
+.create-button,
+.start-now-button,
+.more-feature-button {
     padding: 9px 23px;
     border-radius: 14px;
 }
 
 .sign-button,
-.pricing-button {
+.pricing-button,
+.more-feature-button {
     background-color: var(--white-color);
 }
 
 .create-button,
-.get-started-button {
+.get-started-button,
+.start-now-button {
     background-color: var(--primary-color);
     color: var(--white-color);
     border: 1px solid var(--primary-color);
@@ -79,13 +83,17 @@ header>.company-header {
 .get-started-button,
 .pricing-button,
 .sign-button,
-.create-button {
+.create-button,
+.start-now-button,
+.more-feature-button {
     font-weight: bold;
     cursor: pointer;
 }
 
 .first-section {
     width: 65%;
+
+    /* max-width: calc(100% - 200px); */
     margin: auto;
     text-align: center;
 }
@@ -127,8 +135,7 @@ header>.company-header {
     background-color: var(--purple-color);
     width: 31.3%;
     margin: 0% 1%;
-    height: 395px;
-    gap: 20px;
+    height: 355px;
     border-radius: 45px;
     padding: 48px 40px;
     color: var(--white-color);
@@ -165,7 +172,8 @@ header>.company-header {
     margin-bottom: 50px;
 }
 
-.third-section>div>div>h2,.fourth-section>div>div>h2 {
+.third-section>div>div>h2,
+.fourth-section>div>div>h2 {
     font-size: 45px;
     margin-bottom: 20px;
 }
@@ -174,23 +182,84 @@ header>.company-header {
     gap: 14px;
 }
 
-.fourth-section{
+.fourth-section {
     width: 88%;
     margin: auto;
     padding: 10px;
 }
 
-.file-share-card, .collect-file-card{
-    width: 46%;
-    margin: 0% 2%;
-    height: 688px;
+.file-share-card,
+.collect-file-card {
+    width: 48%;
     border-radius: 45px;
+    padding: 57px 27px 0px 27px;
+    justify-content: space-between;
 }
 
-.file-share-card{
+.file-share-card,
+.collect-file-card {
+    margin-right: 2%;
+    color: var(--gray-color);
+}
+
+.file-share-card h3,
+.collect-file-card h3 {
+    font-size: 42px;
+    color: var(--primary-color);
+    margin-bottom: 17px;
+}
+
+.file-share-card,
+.collect-file-card {
+    text-align: center;
+}
+
+.collect-file-card {
+    margin-left: 2%;
+}
+
+.file-share-card {
     background-color: #FFF7ED;
 }
 
-.collect-file-card{
+.collect-file-card {
     background-color: #E0F7FA;
+}
+
+.team-collaboration {
+    width: 100%;
+    background-color: var(--light-blue);
+    border-radius: 45px;
+    padding: 40px;;
+    margin-top: 32px;
+}
+
+.team-collaboration-1 {
+    gap: 20px;
+    width: 55%;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.team-collaboration-2{
+    height: 400px;
+    margin: auto;
+}
+
+.team-collaboration-1 h3{
+    font-size: 44px;
+}
+
+.team-collaboration-1 p{
+    color: var(--gray-color);
+}
+
+.collaboration-buttons {
+    justify-content: flex-start;
+    gap: 14%;
+}
+
+.start-now-button,
+.more-feature-button{
+    padding: 15px 30px;
 }
