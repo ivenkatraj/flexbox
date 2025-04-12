@@ -269,10 +269,10 @@ header>.company-header {
 .privacy-section {
     width: 88%;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
 }
 
-.privacy-section-1 {
+.privacy-section-1,.privacy-section-2 {
     width: 48%;
     margin: 0% 1%;
 }
@@ -316,4 +316,27 @@ header>.company-header {
 
 .privacy-section-storage{
     margin-top: 20px;
+}
+
+.privacy-section-2{
+    justify-content: space-between;
+}
+
+.privacy-section-2>div{
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.privacy-section-2 div>div:nth-child(2){
+    gap: 20px;
+}
+
+.privacy-section-2 h3{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.privacy-section-1 h2{
+    font-size: 50px;
 }
